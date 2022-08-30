@@ -28,7 +28,15 @@ export default {
   separator: ',',
 
   serialize(date) {
-    let dateStr = date.toLocaleDateString()
+
+    // let dateStr = date.toLocaleDateString();
+
+    //force nl-NL locale
+    let dateStr = date.toLocaleDateString('nl-NL', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+    });
 
     if (this.get('time')) {
       let timeStr = date.toLocaleTimeString()
