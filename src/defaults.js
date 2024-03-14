@@ -18,7 +18,7 @@ export default {
   within: false,
   without: false,
   yearRange: 5,
-  weekStart: 0,
+  weekStart: 1,
 
   defaultTime: {
     start: [0, 0],
@@ -65,7 +65,7 @@ export default {
    */
   i18n: {
     months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
-    weekdays: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
+    weekdays: ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
     time: ['Time', 'Start', 'End']
   },
 
